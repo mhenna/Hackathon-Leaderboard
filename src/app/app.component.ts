@@ -26,7 +26,7 @@ export class AppComponent {
 
   readFile(onFinish) {
     AWS.config.credentials = new AWS.Credentials({
-      accessKeyId: 'AKIAYRGDASIBMUNNW746', secretAccessKey: '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'
+      accessKeyId: '', secretAccessKey: ''
     });
 
     AWS.config.update({ region: 'us-east-2' })
