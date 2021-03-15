@@ -1,0 +1,56 @@
+<nz-layout>
+  <nz-header>
+    <div class="img-div">
+      <div class="logos-left-wrapper">
+        <img class="dell-img" src="../assets/dell_logo.png" [routerLink]="['']" />
+        <img class="extra-logos" src="../assets/MCIT.png" [routerLink]="['']" />
+      </div>
+      <img class="extra-logos" src="../assets/c4logo.png" [routerLink]="['']" />
+    </div>
+  </nz-header>
+  <nz-content>
+    <div class="title-wrapper">
+      <h2 class="title">Leaderboard</h2>
+      <nz-avatar nzSize="large" [nzShape]="'square'" nzSrc="../assets/wreath.svg"></nz-avatar>
+    </div>
+    <div class="table-wrapper">
+      <nz-table #basicTable [nzData]="data" [nzLoading]="data.length == 0" [nzScroll]="{ x: '1600px' }" nzBordered>
+        <thead>
+          <tr>
+            <th nzWidth="3%"></th>
+            <th>Timestamp</th>
+            <th>Team Name</th>
+            <th>Best AWT Round 1 - Initial Test</th>
+            <th>Best AWT Round 1 - Final Test</th>
+            <th>Best AWT Round 2</th>
+            <th>Last AWT Submitted</th>
+            <th>Last CO2 Emissions Submitted</th>
+            <th>Weighted CO2 Emissions</th>
+            <th>Weighted AWT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of basicTable.data; let i = index">
+            <td class="position">{{ data.index }}</td>
+            <td>{{ data.timestamp }}</td>
+            <td>{{ data.team }}</td>
+            <td>{{ data.best_time_1_1 }}</td>
+            <td>{{ data.best_time_1_2 }}</td>
+            <td>{{ data.best_time_2_2 }}</td>
+            <td>{{ data.last_time }}</td>
+            <td>{{ data.last_co2 }}</td>
+            <td>{{ data.weighted_co2 }}</td>
+            <td>{{ data.weighted_time }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </div>
+  </nz-content>
+  <nz-footer>
+    <div class="footer-text">
+      <p>
+        © 2020 Dell Technologies
+      </p>
+    </div>
+  </nz-footer>
+</nz-layout>

@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.ant-table-thead > tr > th {
+    text-align: center;
+}
+
+.ant-table table {
+    text-align: center;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td {
+    padding: 16px 0px;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td {
+    font-size: 14px;
+}

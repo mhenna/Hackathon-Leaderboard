@@ -1,0 +1,101 @@
+:host {
+    min-height: 100%;
+    max-width: 100%;
+    display: flex;
+}
+
+nz-layout {
+    max-width: 100%;
+}
+
+nz-header {
+    background-color: #007DB8;
+    z-index: 2;
+    height: 50px;
+}
+
+.img-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos-left-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dell-img {
+    width: 231px;
+    height: 28px;
+}
+
+.extra-logos {
+    height: 95%;
+}
+
+nz-content {
+    background: #e8f3f7;
+}
+
+.title {
+    font-size: 30pt;
+    text-align: center;
+    margin: 0;
+    margin-right: 6px;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-wrapper {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+nz-table {
+    width: 90%;
+}
+
+.position {
+    font-weight: 700;
+}
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+nz-footer {
+    background-color: #007DB8;
+    color: #fff;
+    height: 50px;
+    padding: 2px 50px;
+}
+
+.footer-text {
+    height: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
