@@ -14,7 +14,7 @@
       <nz-avatar nzSize="large" [nzShape]="'square'" nzSrc="../assets/wreath.svg"></nz-avatar>
     </div>
     <div class="table-wrapper">
-      <nz-table #basicTable [nzData]="data" [nzLoading]="data.length == 0" [nzScroll]="{ x: '1600px' }" nzBordered>
+      <nz-table #basicTable [nzData]="data" [nzLoading]="loading" [nzScroll]="{ x: '1600px' }" nzBordered>
         <thead>
           <tr>
             <th nzWidth="3%"></th>

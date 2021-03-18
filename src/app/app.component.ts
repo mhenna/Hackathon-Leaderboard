@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import * as AWS from 'aws-sdk';
 
 declare var TextDecoder;
@@ -13,14 +12,13 @@ export class AppComponent {
 
   title = 'hackathon-leaderboard';
   data = [];
+  loading = true;
+  constructor() { }
 
-  constructor(
-    private http: HttpClient
-  ) { }
-
-  async ngOnInit() {
+  ngOnInit() {
     this.readFile((data) => {
       this.data = data;
+      this.loading = false;
     });
   }
 
@@ -33,7 +31,7 @@ export class AppComponent {
     let s3 = new AWS.S3();
     var params = {
       Bucket: "traffic-simulator-scores",
-      Key: "scores_latest.csv"
+      Key: "scores_latest_student.csv"
     };
 
     let data = [];
